@@ -10,5 +10,6 @@ output "lambda_function_name" {
 
 output "cw_log_group_name" {
   description = "(Output) CloudWatch log group name"
-  value = aws_cloudwatch_log_group.cw_log_group.name
+  value       = aws_cloudwatch_log_group.cw_log_group.name
+  sensitive   = true
 }
